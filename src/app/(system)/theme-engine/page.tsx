@@ -1,5 +1,13 @@
 import React from 'react';
 
+/**
+ * Page component that displays the Theme Engine title and a brief description.
+ *
+ * Renders a static header and description text for the Theme Engine page and includes
+ * a placeholder where theme configuration controls will be added.
+ *
+ * @returns The page's JSX element.
+ */
 export default function ThemeEnginePage() {
   return (
     <div>

@@ -1,5 +1,14 @@
 import React from 'react';
 
+/**
+ * Page component that renders the Monitoring Body header and description.
+ *
+ * Renders a static section containing a title ("萬能監控體 (Monitoring Body)"), a short
+ * descriptive subtitle about observability, logs, and diagnostics, and a placeholder for
+ * future logs, charts, and diagnostic UI.
+ *
+ * @returns The JSX element for the Monitoring Body page.
+ */
 export default function MonitoringBodyPage() {
   return (
     <div>

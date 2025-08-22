@@ -2,6 +2,18 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Reusable stylable input component that renders a native <input> and forwards all native input props.
+ *
+ * The component applies a comprehensive default set of utility classes (layout, typography, borders, dark mode,
+ * focus/ARIA states, file-input styles, etc.) and merges any additional classes provided via `className`.
+ * It also sets `data-slot="input"` on the rendered element.
+ *
+ * @param className - Additional CSS class names to merge with the component's default classes.
+ * @param type - The HTML input `type` attribute (e.g., "text", "email", "password"); other native input props
+ *               may be passed via `...props`.
+ * @returns The rendered input element.
+ */
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   return (
     <input

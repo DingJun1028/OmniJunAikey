@@ -11,6 +11,16 @@ interface MenuFlowResponse {
   response: string;
 }
 
+/**
+ * Renders the "Terminus Matrix Dashboard" page: a card UI that accepts a user prompt,
+ * sends it to the /api/flows/menuFlow API, and displays the resulting response or an error.
+ *
+ * The component manages local state for the input prompt, API response text, loading flag,
+ * and error message. Submits via a form handler that ignores empty prompts, toggles loading,
+ * clears previous results, and updates state with either the API response (`result.response`)
+ * or an error message. While a request is in flight, the input and submit button are disabled
+ * and the button label changes to indicate loading.
+ */
 export default function DashboardPage() {
   const [prompt, setPrompt] = useState<string>('');
   const [response, setResponse] = useState<string>('');

@@ -1,5 +1,18 @@
 import Image from "next/image";
 
+/**
+ * Presentational landing-page component for the Next.js starter.
+ *
+ * Renders a static, responsive layout containing the Next.js logo, a short
+ * instruction list, two call-to-action buttons ("Deploy now" and "Read our docs"),
+ * and a footer with three external links. The component is stateless and accepts
+ * no props.
+ *
+ * Images include alt text; decorative footer icons are marked with `aria-hidden`.
+ * External links open in a new tab and use `rel="noopener noreferrer"`.
+ *
+ * @returns A JSX element representing the landing page.
+ */
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">

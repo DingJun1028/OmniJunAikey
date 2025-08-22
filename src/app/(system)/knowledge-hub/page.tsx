@@ -1,5 +1,15 @@
 import React from 'react';
 
+/**
+ * Renders the Knowledge Hub page UI.
+ *
+ * Displays a static title ("萬能智庫中樞 (Knowledge Hub)"), a brief subtitle describing
+ * exploration and management of the system's long-term memory, and a placeholder for
+ * future knowledge-base search and display components. This component has no props,
+ * state, or side effects.
+ *
+ * @returns The page's JSX element containing the title, subtitle, and placeholder.
+ */
 export default function KnowledgeHubPage() {
   return (
     <div>

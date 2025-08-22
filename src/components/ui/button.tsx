@@ -35,6 +35,17 @@ const buttonVariants = cva(
   }
 )
 
+/**
+ * A styled Button component that supports CVA-driven variants and optional Radix `Slot` rendering.
+ *
+ * Renders either a native `button` or a Radix `Slot` (when `asChild` is true) with classes computed from `buttonVariants`.
+ *
+ * @param className - Additional class names to merge with the computed variant/size classes.
+ * @param variant - Visual variant key from `buttonVariants` (e.g., "default", "destructive", "outline", etc.).
+ * @param size - Size key from `buttonVariants` (e.g., "default", "sm", "lg", "icon").
+ * @param asChild - If true, renders a Radix `Slot` so consumers can pass a custom element as the rendered node.
+ * @returns A JSX element (`button` or `Slot`) with merged classes and forwarded props.
+ */
 function Button({
   className,
   variant,
